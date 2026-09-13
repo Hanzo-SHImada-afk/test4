@@ -1,0 +1,525 @@
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtn/Vazirmatn-Thin.woff2);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtn/Vazirmatn-ExtraLight.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtn/Vazirmatn-Light.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtn/Vazirmatn-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtn/Vazirmatn-Medium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtn/Vazirmatn-SemiBold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtn/Vazirmatn-Bold.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtn/Vazirmatn-ExtraBold.woff2);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtn/Vazirmatn-Black.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtnfd/Vazirmatn-Thin.woff2);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtnfd/Vazirmatn-ExtraLight.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtnfd/Vazirmatn-Light.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtnfd/Vazirmatn-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtnfd/Vazirmatn-Medium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtnfd/Vazirmatn-SemiBold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtnfd/Vazirmatn-Bold.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtnfd/Vazirmatn-ExtraBold.woff2);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Vazirmtn", sans-serif;
+    src: url(fonts/vazirmtnfd/Vazirmatn-Black.woff2);
+    font-weight: 900;
+}
+
+:root {
+    --green: #1CC809;
+    --red: #F40B0B;
+    --blue: #09C8C8;
+    --dark-purple: #250570;
+    --purple: #34079C;
+    --blue-purple: #4209C8;
+    --light-blue-purple: #6527F5;
+    --white: #FFFFFF;
+    --black: #252525;
+    --glassy: #dddbea;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+    background: linear-gradient(135deg,
+            var(--dark-purple),
+            var(--purple),
+            var(--blue-purple),
+            var(--light-blue-purple));
+}
+
+.headers {
+    margin-top: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: none;
+}
+
+.title {
+    color: var(--white);
+    font-family: "Vazirmtn";
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.title span {
+    color: var(--white);
+    font-size: 1rem;
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 100;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 1000px;
+    width: 150px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.08);
+}
+
+
+
+.b1 button {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    border-radius: 25px;
+    color: var(--white);
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 500;
+    transition: 0.25s;
+    font-size: 14px;
+}
+
+.b2 button {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    border-radius: 25px;
+    color: var(--white);
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+
+
+/* .b2 button{
+    border-radius: 25px;
+    width: 45px;
+    height: 30px;
+}
+.b1 button{
+    border-radius: 25px;
+    width: 45px;
+    height: 30px;
+} */
+.b1:hover,
+.b2:hover {
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.25),
+        0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.plans {
+    /* margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    min-height: 700px;
+    gap: 9px; */
+    margin-top: 25px;
+    gap: 10px;
+    min-height: 700px;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    min-height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    padding: 16px 18px;
+    border-radius: 17px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+    text-align: right;
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.card img {
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    background: var(--glassy);
+    color: var(--dark-purple);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+
+.badge1 {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card h2 {
+    color: var(--white);
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 900;
+    font-size: 37px;
+    margin-bottom: 7px;
+}
+
+.card p {
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    border-bottom: #ffffff42 1px solid;
+}
+
+.description {
+    color: #d0cde1;
+    font-size: 9px;
+    line-height: 2;
+    margin-bottom: 7px;
+}
+
+.card ul {
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 400;
+    list-style: none;
+    color: var(--white);
+    font-size: 18px;
+    position: absolute;
+    top: 450px;
+    padding-right: 5px;
+    line-height: 2;
+}
+
+.card li::before {
+    content: "✓";
+    margin-left: 5px;
+}
+
+
+
+.buy {
+    font-family: "vazirmtn", sans-serif;
+    font-weight: 600;
+    align-items: flex-end;
+    width: 100%;
+    border: 0;
+    border-radius: 20px;
+    color: var(--white);
+    padding: 7px;
+    margin-top: 260px;
+    font-family: inherit;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.red {
+    background: #ed6470;
+}
+
+.blue {
+    background: #55aee2;
+}
+
+.green {
+    background: #38c68a;
+}
+
+
+.sleepd {
+    display: flex;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+
+.ig {
+    border-radius: 0 180px 0 0;
+    width: 60%;
+    height: 100%;
+    background-color: #250570;
+
+}
+
+
+
+.ig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 180px 25px 5px;
+}
+
+.txt {
+    direction: ltr;
+    padding-right: 63px;
+    line-height: 1.8;
+}
+
+.txt p {
+    direction: ltr;
+}
+
+.txt button {
+    width: 160px;
+    height: 30px;
+    border: 0;
+    border-radius: 50px;
+    background-color: var(--white);
+}
+
+footer {
+    /* position: relative; */
+
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    background: transparent;
+    border: 0;
+}
+
+.spd {
+    /* position: absolute;
+    top: 50px; */
+    color: var(--white);
+    line-height: 2;
+}
+
+
+spd h2 {
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.icons a {
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--white);
+    list-style: none;
+    text-decoration: none;
+}
+
+.up {
+
+    margin-top: 10px;
+}
+
+.up button {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ایراد داره */
+.calls {
+    /* position: absolute;
+    top: 61px;
+    right: 80%; */
+    margin-left: -995px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.calls a {
+    color: var(--white);
+    font-family: "Vazirmtn", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.certificates {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 49px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    margin-left: 77px;
+    margin-top: 151px;
+}
+
+
+.certificates img{
+    width: 25px;
+    height: 25px;
+    border: 0;
+    background: transparent;
+}
+
+.rules{
+    display: flex;
+    border-top: 1 solid white;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: "Vazirmtn",sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.line{
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+    height: 1px;
+    background: white;
+}
